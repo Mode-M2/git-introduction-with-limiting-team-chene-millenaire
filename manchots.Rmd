@@ -37,7 +37,7 @@ L'objectif de cette classe est de proposer des représentations graphiques de ce
 
 
 ##Description du jeu de données
-Ce jeu de données comporte des mesures de différentes espèces de manchots provenant de différentes îles, échantillonnées sur plusieurs années.
+Ce jeu de données comporte des mesures de longueur de bec, de masse corporelle et de profondeur de la nageoire de différentes espèces de manchots provenant de différentes îles, échantillonnées sur plusieurs années.
 
 
 ##Exploration visuelle
@@ -78,3 +78,6 @@ ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)
   theme_minimal()
 ```
 
+
+#Statistiques descriptives
+summary(penguins)
