@@ -34,5 +34,47 @@ install.packages('palmerpenguins)
 
 L'objectif de cette classe est de proposer des représentations graphiques de ces données en collaborant à l'aide de l'outil git.
 
-#Description du jeu de données
+
+
+##Description du jeu de données
 Ce jeu de données comporte des mesures de différentes espèces de manchots provenant de différentes îles, échantillonnées sur plusieurs années.
+
+
+##Exploration visuelle
+
+#Graphique 1 : Diagramme en boîte des longueurs de bec par espèce
+```{r}
+library(ggplot2)
+
+# Créer un diagramme en boîte des longueurs de bec par espèce
+ggplot(penguins, aes(x = species, y = bill_length_mm, fill = species)) +
+  geom_boxplot() +
+  labs(title = "Diagramme en boîte des longueurs de bec par espèce",
+       x = "Espèce",
+       y = "Longueur de bec (mm)") +
+  theme_minimal()
+```
+
+
+#Graphique 2 : Histogramme des masses corporelles des manchots
+```{r}
+# Créer un histogramme des masses corporelles des manchots
+ggplot(penguins, aes(x = body_mass_g)) +
+  geom_histogram(fill = "blue", bins = 30) +
+  labs(title = "Histogramme des masses corporelles des manchots",
+       x = "Masse corporelle (g)",
+       y = "Fréquence") +
+  theme_minimal()
+```
+
+#Graphique 3 : Nuage de points de la longueur de bec par rapport à la profondeur de la nageoire
+```{r}
+# Créer un nuage de points de la longueur de bec par rapport à la profondeur de la nageoire
+ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) +
+  geom_point() +
+  labs(title = "Nuage de points de la longueur de bec par rapport à la profondeur de la nageoire",
+       x = "Longueur de bec (mm)",
+       y = "Profondeur de la nageoire (mm)") +
+  theme_minimal()
+```
+
