@@ -33,3 +33,5 @@ install.packages('palmerpenguins)
 ```
 
 L'objectif de cette classe est de proposer des représentations graphiques de ces données en collaborant à l'aide de l'outil git.
+
+Ce jeu de données comporte des mesures de différentes espèces de manchots provenant de différentes îles, échantillonnées sur plusieurs années.
