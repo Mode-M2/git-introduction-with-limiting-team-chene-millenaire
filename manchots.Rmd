@@ -1,5 +1,5 @@
 title: "Etude sur les manchots"
-author: "MP Etienne et  toute la spé data science"
+author: "Fanny Kuttler et la team Chêne Millénaire"
 date: "9/2/2023"
 output: html_document 
 ---
